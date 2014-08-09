@@ -1,0 +1,401 @@
+/*
+Theme Name: Blank
+Theme URI:
+Description: WordPress theme starter pack for faster design and development.
+Author: Lifehacker
+Author URI: http://lifehacker.com
+Version: 0.1
+Tags: lifehacker
+
+This theme is property of Adam Dachis and is not available for public use.
+ 
+*/
+
+/*** GLOBAL : GENERAL STYLE DEFAULTS ***/
+html
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background: #fff;
+	margin: 0;
+	background-color: #F2F5A9;
+}
+body, input, textarea
+{
+	color: #222;    
+	font-family: Arial, sans-serif;
+	line-height: 1.5;
+}
+h1, h2, h3, h4, h5, h6
+{ 
+	font-weight: normal;
+	clear: both;
+}
+hr
+{
+	background-color: #999;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+pre
+{
+	font: 11px Monaco, monospace;
+	line-height: 1.5;
+	margin-bottom: 1.5em;
+}
+code
+{
+	font: 11px Monaco, monospace;
+}
+p
+{
+	margin: 4px 0 12px 0;
+}
+a
+{
+	color: #0a77e6;
+}
+a:hover
+{
+	color: #065c88;
+}
+a:visited
+{
+	color: #8b46d1;
+}
+
+
+
+/*** PAGE LAYOUT ***/
+
+/* Styles that affect the entire layout of the page */
+div#container
+{
+	margin: 4px 4px 4px 4px;
+}
+div#content
+{
+	width: 60%;
+	float: left;
+	margin: 0 0 0 51px;
+	padding: 0 18px 0 0px;
+	height: 900px;
+}
+
+#map {
+    width:400px;
+    height:300px;
+}
+
+
+/*** HEADER : MENU ***/
+
+/* To see a menu in your header, you'll need to first add one in WordPress Admin */
+.primary-menu-nav {
+	margin-top: 0px;
+	height: 60px;
+}
+
+.primary-menu-nav ul
+{
+    background-color: #FFFF00;
+    list-style: none;
+    margin: 0;
+    height: 60px;
+
+    /*background-color: #FFFF00;*/
+}
+
+.primary-menu-nav li
+{
+    display: inline;
+    /*float: left;*/
+    padding: 0 30px 0 4px;
+}
+
+.menu-item a
+{
+	font-size: 30px;
+	text-decoration: none;
+	color: #3eaf00;
+	/*text-transform:lowercase;*/
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding: 2px 5px 16px 5px;
+    /*padding-top: 1px;*/
+}
+.menu-item a:hover
+{
+	color: #5d8a05;
+}
+
+
+
+/*** HEADER : OTHER ***/
+
+.home-link-icon a{
+   padding-left: 88px !important;
+   font-family: 'Open Sans Condensed', sans-serif;
+   /*font-family: 'Allura', cursive;*/
+   background-image: url(img/home_transparent.png);
+   background-position: left;
+   background-repeat: no-repeat;
+   background-size: 60px;
+}
+
+
+.current-menu-item a {
+	background-color: #B45F04;
+	color: #fff;
+}
+
+.current-menu-item a:hover {
+	background-color: #AA0000;
+	color: #FFFF00;
+}
+
+#my-navigation > a {
+    display: none;
+}
+
+/*** CONTENT : POSTS AND PAGES ***/
+
+/* Entry and Page Titles */
+h1.entry-title
+{
+	font-family: 'Wire One', sans-serif;
+	font-weight: bold;
+}
+h2.entry-title
+{
+	
+}
+h2.entry-title a
+{
+	
+}
+h1.page-title
+{
+	
+}
+
+/* Media Alignment */
+.alignright
+{
+	/* Style for right-aligned images in posts */
+	padding: 8px 0 8px 8px;
+	float: right;
+}
+.alignleft
+{
+	/* Style for left-aligned images in posts */
+	padding: 8px 8px 8px 0;
+	float: left;
+}
+
+/* Entry Content */
+.entry-content
+{
+	/* Style that affects actual entry/post content */
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.entry-content a
+{
+	
+}
+.entry-content a:hover
+{
+	
+}
+.entry-content h1, h2, h3, h4, h5
+{
+	
+}
+.entry-content ol li
+{
+	
+}
+
+.entry-utility
+{
+	/* Style for the entry utility, which sits below a post and provides info like categories, tags, feeds, and an edit link (for authors) */
+}
+.entry-meta
+{
+	/* Style for the entry metadata (author, etc.) */
+}
+.skip-link
+{
+	/* Style for the skip link */
+	/*position: absolute;
+	left: -9000px;*/
+}
+.navigation
+{
+	/* Style for the navigation links (next/previous post) on a given post */
+}
+
+
+/*** CONTENT : COMMENTS ***/
+
+div#comments
+{
+	/* Style that affects the DIV containing all the comments */
+}
+.comments h3
+{
+	/* H3 header style for comments */
+}
+.comments ol
+{
+	/* Comments are displayed as ordered lists by default, so you want to style that list so it looks the way you want */
+}
+.comments ol li
+{
+	/* Style each list item in the comments ordered list */
+}
+.comments img
+{
+	/* Style for the user avatar beside each comment */
+	float: left;
+	margin: 0 12px 8px 0;
+}
+.comments .comment
+{
+	/* Style that applies to each individual comment in a series of comments */
+}
+
+.children ul li
+{
+	/* A style that refers to the children (as in, responses to) any given comment */
+}
+
+.comment-reply-link
+{
+	/* Style for the "Reply" link on a comment */
+}
+.comment-meta
+{
+	/* Style for metadata for a comment */
+}
+div#respond
+{
+	/* DIV that contains the comment response form */
+}
+div#respond h3
+{
+	/* H3 header for the comment response form */
+}
+
+
+/*** CONTENT : SIDEBAR ***/
+div#primary
+{
+	/* Primary Widget Area DIV */
+}
+div#secondary
+{
+	/* Secondary Widget Area DIV */
+}
+.widget-area
+{
+	/* Class that applies to BOTH widget areas */
+	float: left;
+	width: 30%;
+}
+
+.xoxo 
+{
+	/* Class that applies to each item in each widget area (an unordered list class) */
+	list-style-type: none;
+
+	text-decoration: none;
+}
+
+/*** FOOTER ***/
+div#footer
+{
+	float: left;
+	clear: both;
+}
+
+
+/*** YOUR CSS ***/
+
+/*.primary-mobile-nav {
+    display: none;
+}
+
+.primary-desktop-nav {
+    display: block;
+}*/
+
+@media only screen and (max-width: 960px) {
+	div#container {
+		margin: 0px 4px 0px 4px;
+	}
+    #map {
+        width:200px;
+        height:200px;
+    }
+
+    #my-navigation > div
+    {
+        position: relative;
+        background-color: none;
+        height: 0px;
+        width:80%;
+    }
+
+    #my-navigation > a {
+        display: none;
+    }
+
+    #my-navigation:not( :target ) > a:first-of-type,
+    #my-navigation:target > a:last-of-type
+    {
+        display: block;
+        padding: 50px 21px 10px 21px;
+        background-image: url(img/home_transparent.png);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: 60px;
+    }
+
+    #my-navigation > .primary-menu-nav > ul
+    {
+        height: auto;
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: 20px;
+        padding-left: 0px;
+    }
+
+    #my-navigation:target > .primary-menu-nav > ul
+    {
+        display: block;
+    }
+
+    #my-navigation:target > .primary-menu-nav  > ul > li
+    {
+        width: 85%;
+        float: none;
+        display: inline-flex;
+        border-bottom: 0.5px solid white;
+    }
+
+    #my-navigation:target > .primary-menu-nav  > ul > .home-link-icon a {
+        padding-left: 4px !important;
+        background-image: none;
+    }
+    #my-navigation:target > .primary-menu-nav  > ul > .current-menu-item a {
+        margin-left: -4px;
+        width:100%;
+    }
+
+}
