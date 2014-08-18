@@ -1,14 +1,13 @@
 /*
-Theme Name: Blank
+Theme Name: Cornucopia Theme
 Theme URI:
-Description: WordPress theme starter pack for faster design and development.
-Author: Lifehacker
-Author URI: http://lifehacker.com
+Description: Theme for Cornucopia site.
+Author: Sudarshan Shubakar
+Author URI: http://www.sudarshanshubakar.co.in
 Version: 0.1
-Tags: lifehacker
+Tags: sudarshan,cornucopia
 
-This theme is property of Adam Dachis and is not available for public use.
- 
+
 */
 
 /*** GLOBAL : GENERAL STYLE DEFAULTS ***/
@@ -87,8 +86,8 @@ div#content
 }
 
 #map {
-    width:400px;
-    height:300px;
+	width:400px;
+	height:300px;
 }
 
 
@@ -102,19 +101,19 @@ div#content
 
 .primary-menu-nav ul
 {
-    background-color: #FFFF00;
-    list-style: none;
-    margin: 0;
-    height: 60px;
+	background-color: #FFFF00;
+	list-style: none;
+	margin: 0;
+	height: 60px;
 
-    /*background-color: #FFFF00;*/
+	/*background-color: #FFFF00;*/
 }
 
 .primary-menu-nav li
 {
-    display: inline;
-    /*float: left;*/
-    padding: 0 30px 0 4px;
+	display: inline;
+	/*float: left;*/
+	padding: 0 30px 0 4px;
 }
 
 .menu-item a
@@ -123,13 +122,13 @@ div#content
 	text-decoration: none;
 	color: #3eaf00;
 	/*text-transform:lowercase;*/
-    font-family: 'Open Sans Condensed', sans-serif;
-    padding: 2px 5px 16px 5px;
-    /*padding-top: 1px;*/
+	font-family: 'Open Sans Condensed', sans-serif;
+	padding: 2px 5px 16px 5px;
+	/*padding-top: 1px;*/
 }
 .menu-item a:hover
 {
-	color: #5d8a05;
+	color: #FF0000;
 }
 
 
@@ -137,13 +136,12 @@ div#content
 /*** HEADER : OTHER ***/
 
 .home-link-icon a{
-   padding-left: 88px !important;
-   font-family: 'Open Sans Condensed', sans-serif;
-   /*font-family: 'Allura', cursive;*/
-   background-image: url(img/home_transparent.png);
-   background-position: left;
-   background-repeat: no-repeat;
-   background-size: 60px;
+	padding-left: 88px !important;
+	font-family: 'Open Sans Condensed', sans-serif;
+	background-image: url(img/home_transparent.png);
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: 60px;
 }
 
 
@@ -158,7 +156,7 @@ div#content
 }
 
 #my-navigation > a {
-    display: none;
+	display: none;
 }
 
 /*** CONTENT : POSTS AND PAGES ***/
@@ -325,77 +323,119 @@ div#footer
 
 /*** YOUR CSS ***/
 
-/*.primary-mobile-nav {
-    display: none;
-}
-
-.primary-desktop-nav {
-    display: block;
-}*/
 
 @media only screen and (max-width: 960px) {
 	div#container {
 		margin: 0px 4px 0px 4px;
 	}
-    #map {
-        width:200px;
-        height:200px;
-    }
+	#map {
+		width:200px;
+		height:200px;
+	}
 
-    #my-navigation > div
-    {
-        position: relative;
-        background-color: none;
-        height: 0px;
-        width:80%;
-    }
+	#my-navigation {
+		background-color: #FFFF00;
+	}
 
-    #my-navigation > a {
-        display: none;
-    }
+	#my-navigation > div
+	{
+		position: relative;
+		height: 0px;
+		width:80%;
+	}
 
-    #my-navigation:not( :target ) > a:first-of-type,
-    #my-navigation:target > a:last-of-type
-    {
-        display: block;
-        padding: 50px 21px 10px 21px;
-        background-image: url(img/home_transparent.png);
-        background-position: left;
-        background-repeat: no-repeat;
-        background-size: 60px;
-    }
+	#my-navigation > a {
+		display: none;
+	}
 
-    #my-navigation > .primary-menu-nav > ul
-    {
-        height: auto;
-        display: none;
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin-left: 20px;
-        padding-left: 0px;
-    }
+	#my-navigation:not( :target ) > a:first-of-type,
+	#my-navigation:target > a:last-of-type
+	{
+		display: block;
+		padding: 50px 21px 10px 21px;
+		background-image: url(img/home_transparent.png);
+		background-position: left;
+		background-repeat: no-repeat;
+		background-size: 60px;
+	}
 
-    #my-navigation:target > .primary-menu-nav > ul
-    {
-        display: block;
-    }
+	#my-navigation > .primary-menu-nav > ul
+	{
+		height: auto;
+		display: none;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin-left: 20px;
+		padding-left: 0px;
+		width: 100%;
+		border-radius: 8px;
+	}
 
-    #my-navigation:target > .primary-menu-nav  > ul > li
-    {
-        width: 85%;
-        float: none;
-        display: inline-flex;
-        border-bottom: 0.5px solid white;
-    }
+	#my-navigation:target > .primary-menu-nav > ul
+	{
+		display: block;
+		z-index: 2000;
+		width: 100%;
+		border-radius: 8px;
+	}
 
-    #my-navigation:target > .primary-menu-nav  > ul > .home-link-icon a {
-        padding-left: 4px !important;
-        background-image: none;
-    }
-    #my-navigation:target > .primary-menu-nav  > ul > .current-menu-item a {
-        margin-left: -4px;
-        width:100%;
-    }
+	#my-navigation:target > .primary-menu-nav  > ul > li
+	{
+		width: 98%;
+		float: none;
+		display: inline-flex;
+		border-bottom: 0.5px solid white;
+		padding-right: 0%;
+		border-top-left-radius:8px;
+		border-top-right-radius:8px;
+	}
 
+	#my-navigation:target > .primary-menu-nav  > ul > .last-menu-item {
+		border-top-left-radius:0px;
+		border-top-right-radius:0px;
+		border-bottom-left-radius:8px;
+		border-bottom-right-radius:8px;
+		border-bottom : 2px solid #B45F04;
+		border-left : 2px solid #B45F04;
+		border-right : 2px solid #B45F04;	
+	}
+
+	#my-navigation:target > .primary-menu-nav  > ul > li {
+		border-top-left-radius:0px;
+		border-top-right-radius:0px;
+		border-bottom-left-radius:0px;
+		border-bottom-right-radius:0px;
+		border-left : 2px solid #B45F04;
+		border-right : 2px solid #B45F04;	
+	}
+
+	#my-navigation:target > .primary-menu-nav  > ul > .last-menu-item a {
+		border-bottom-left-radius:8px;
+		border-bottom-right-radius:8px;
+	}
+
+	#my-navigation:target > .primary-menu-nav  > ul > .home-link-icon {
+		border-top : 2px solid #B45F04;
+		border-left : 2px solid #B45F04;
+		border-right : 2px solid #B45F04;		
+		border-top-left-radius:8px;
+		border-top-right-radius:8px;
+	}
+
+	#my-navigation:target > .primary-menu-nav  > ul > .home-link-icon a {
+		padding-left: 4px !important;
+		background-image: none;
+		width: 100%;
+		border-top-left-radius:8px;
+		border-top-right-radius:8px;
+	}
+
+	#my-navigation:target > .primary-menu-nav  > ul > .menu-item a {
+		width: 100%
+	}
+	#my-navigation:target > .primary-menu-nav  > ul > .current-menu-item a {
+		margin-left: -4px;
+		width:100%;
+	}
 }
